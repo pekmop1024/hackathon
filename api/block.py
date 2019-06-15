@@ -741,7 +741,7 @@ BLOCKS = {
 
 def read(blocknumber):
     if blocknumber in BLOCKS:
-        block = BLOCKS.get(blocknumber)
+        return {"blockname": BLOCKS.get(blocknumber)["blockname"], "blockborderpoints": BLOCKS.get(blocknumber)["blockborderpoints"] }
     else:
         abort(
             404, "block with number {blocknumber} not found".format(blocknumber=blocknumber)
