@@ -1,0 +1,152 @@
+swagger: "2.0"
+info:
+  description: This is the swagger file that goes with our server code
+  version: "1.0.0"
+  title: Swagger REST Article
+consumes:
+  - "application/json"
+produces:
+  - "application/json"
+
+basePath: "/"
+
+# Paths supported by the server application
+paths:
+  /block/{blocknumber}:
+    get:
+      operationId: "block.read"
+      tags:
+        - block
+      summary: "all block information"
+      description: "read all block information"
+      parameters:
+        - name: blocknumber
+          in: path
+          description: block number
+          type: string
+          required: True
+      responses:
+        200:
+          description: "successful read block operation"
+          schema:
+            type: "array"
+            items:
+              properties:
+                blockname:
+                  type: "string"
+                people:
+                  type: "array"
+                objects:
+                  type: "array"
+                emergencies:
+                  type: "array"
+
+  /block/{blocknumber}/objects:
+    get:
+      operationId: "block.read_object_types"
+      tags:
+        - block
+      summary: "all block information"
+      description: "read all block information"
+      parameters:
+        - name: blocknumber
+          in: path
+          description: block number
+          type: string
+          required: True
+      responses:
+        200:
+          description: "successful read block objects operation"
+          schema:
+            type: "array"
+            items:
+              properties:
+                objects:
+                  type: "string"
+
+  /block/{blocknumber}/objects/{blockobjecttype}:
+    get:
+      operationId: "block.read_object"
+      tags:
+        - block
+      summary: "all block information"
+      description: "read all block information"
+      parameters:
+        - name: blocknumber
+          in: path
+          description: block number
+          type: string
+          required: True
+        - name: blockobjecttype
+          in: path
+          description: block object type
+          type: string
+          required: True
+      responses:
+        200:
+          description: "successful read block objects operation"
+          schema:
+            type: "array"
+            items:
+              properties:
+                objects:
+                  type: "array"
+
+  /block/{blocknumber}/emergencies:
+    get:
+      operationId: "block.read_emergencies"
+      tags:
+        - block
+      summary: "all block information"
+      description: "read all block information"
+      parameters:
+        - name: blocknumber
+          in: path
+          description: block number
+          type: string
+          required: True
+      responses:
+        200:
+          description: "successful read block objects operation"
+          schema:
+            type: "array"
+            items:
+              properties:
+                emergencies:
+                  type: "string"
+
+  /block/{blocknumber}/people/{sex}/{generation}:
+    get:
+      operationId: "block.read_people"
+      tags:
+        - block
+      summary: "all block information"
+      description: "read all block information"
+      parameters:
+        - name: blocknumber
+          in: path
+          description: block number
+          type: string
+          required: True
+        - name: sex
+          in: path
+          description: people sex
+          type: string
+          required: True
+        - name: generation
+          in: path
+          description: people generation
+          type: string
+          required: True
+      responses:
+        200:
+          description: "successful read block objects operation"
+          schema:
+            type: "array"
+            items:
+              properties:
+                activities:
+                  type: "array"
+                population:
+                  type: "string"
+
