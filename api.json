@@ -1,0 +1,162 @@
+{
+  "0": {
+    "blockname": "Центральный",
+    "people": [
+      {
+        "sex": "m",
+        "generation": {
+          "0": {
+            "activities": [
+              "kidgardens",
+              "parks"
+            ]
+          },
+          "1": {
+            "activities": [
+              "schools",
+              "colleges",
+              "parks"
+            ]
+          },
+          "2": {
+            "activities": [
+              "universities",
+              "parks",
+              "bars"
+            ]
+          },
+          "3": {
+            "activities": [
+              "parks",
+              "hospitals"
+            ]
+          }
+        }
+      },
+      {
+        "sex": "f",
+        "generation": {
+          "0": {
+            "activities": [
+              "kidgardens",
+              "parks"
+            ]
+          },
+          "1": {
+            "activities": [
+              "schools",
+              "colleges",
+              "parks"
+            ]
+          },
+          "2": {
+            "activities": [
+              "universities",
+              "parks",
+              "bars"
+            ]
+          },
+          "3": {
+            "activities": [
+              "parks",
+              "hospitals"
+            ]
+          }
+        }
+      }
+    ],
+    "objects": {
+      "kidgardens": "10",
+      "schools": "15",
+      "parks": "3",
+      "colleges": "5",
+      "universities": "1",
+      "hospitals": "1"
+    },
+    "emergencies": {
+      "crime": "100",
+      "fire": "50",
+      "med": "25"
+    }
+  },
+  "1": {
+    "blockname": "Киевский",
+    "people": [
+      {
+        "sex": "m",
+        "generation": {
+          "0": {
+            "activities": [
+              "kidgardens",
+              "parks"
+            ]
+          },
+          "1": {
+            "activities": [
+              "schools",
+              "colleges",
+              "parks"
+            ]
+          },
+          "2": {
+            "activities": [
+              "universities",
+              "parks",
+              "bars"
+            ]
+          },
+          "3": {
+            "activities": [
+              "parks",
+              "hospitals"
+            ]
+          }
+        }
+      },
+      {
+        "sex": "f",
+        "generation": {
+          "0": {
+            "activities": [
+              "kidgardens",
+              "parks"
+            ]
+          },
+          "1": {
+            "activities": [
+              "schools",
+              "colleges",
+              "parks"
+            ]
+          },
+          "2": {
+            "activities": [
+              "universities",
+              "parks",
+              "bars"
+            ]
+          },
+          "3": {
+            "activities": [
+              "parks",
+              "hospitals"
+            ]
+          }
+        }
+      }
+    ],
+    "objects": {
+      "kidgardens": "10",
+      "schools": "15",
+      "parks": "3",
+      "colleges": "5",
+      "universities": "1",
+      "hospitals": "1"
+    },
+    "emergencies": {
+      "crime": "100",
+      "fire": "50",
+      "med": "25"
+    }
+  }
+}
