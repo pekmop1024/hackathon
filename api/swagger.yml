@@ -46,8 +46,8 @@ paths:
       operationId: "block.read_object_types"
       tags:
         - block
-      summary: "all block information"
-      description: "read all block information"
+      summary: "block object types information"
+      description: "read block object types information"
       parameters:
         - name: blocknumber
           in: path
@@ -69,8 +69,8 @@ paths:
       operationId: "block.read_object"
       tags:
         - block
-      summary: "all block information"
-      description: "read all block information"
+      summary: "information on certain block object type"
+      description: "read information on certain block object type"
       parameters:
         - name: blocknumber
           in: path
@@ -97,8 +97,8 @@ paths:
       operationId: "block.read_emergencies"
       tags:
         - block
-      summary: "all block information"
-      description: "read all block information"
+      summary: "emergencies"
+      description: "all block emergencies information"
       parameters:
         - name: blocknumber
           in: path
@@ -107,21 +107,44 @@ paths:
           required: True
       responses:
         200:
-          description: "successful read block objects operation"
+          description: "successful read block emergencies operation"
           schema:
             type: "array"
             items:
               properties:
                 emergencies:
-                  type: "string"
+                  type: "array"
+
+  /block/{blocknumber}/people/generations:
+    get:
+      operationId: "block.read_generations"
+      tags:
+        - block
+      summary: "generations"
+      description: "all block generations information"
+      parameters:
+        - name: blocknumber
+          in: path
+          description: block number
+          type: string
+          required: True
+      responses:
+        200:
+          description: "successful read block generations operation"
+          schema:
+            type: "array"
+            items:
+              properties:
+                generations:
+                  type: "array"
 
   /block/{blocknumber}/people/{sex}/{generation}:
     get:
       operationId: "block.read_people"
       tags:
         - block
-      summary: "all block information"
-      description: "read all block information"
+      summary: "certain sex/generation people"
+      description: "preferred activities and population of certain sex/generation people"
       parameters:
         - name: blocknumber
           in: path
@@ -140,7 +163,7 @@ paths:
           required: True
       responses:
         200:
-          description: "successful read block objects operation"
+          description: "successful read block people operation"
           schema:
             type: "array"
             items:

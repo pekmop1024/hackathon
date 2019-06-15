@@ -49,6 +49,20 @@ BLOCKS = {
             "parks",
             "hospitals"
           ]
+        },
+        "4": {
+          "population": "666",
+          "activities": [
+            "parks",
+            "hospitals"
+          ]
+        },
+        "5": {
+          "population": "666",
+          "activities": [
+            "parks",
+            "hospitals"
+          ]
         }
       },
       "f": {
@@ -81,6 +95,20 @@ BLOCKS = {
             "parks",
             "hospitals"
           ]
+        },
+        "4": {
+          "population": "666",
+          "activities": [
+            "parks",
+            "hospitals"
+          ]
+        },
+        "5": {
+          "population": "666",
+          "activities": [
+            "parks",
+            "hospitals"
+          ]
         }
       }
     },
@@ -89,8 +117,8 @@ BLOCKS = {
         {
           "0": {
             "name": "kg0",
-            "popcurrent": "10",
-            "popmax": "15",
+            "population": "10",
+            "capacity": "15",
             "x": "0",
             "y": "0"
           }
@@ -98,8 +126,8 @@ BLOCKS = {
         {
           "1": {
             "name": "kg1",
-            "popcurrent": "10",
-            "popmax": "15",
+            "population": "10",
+            "capacity": "15",
             "x": "0",
             "y": "0"
           }
@@ -107,8 +135,8 @@ BLOCKS = {
         {
           "2": {
             "name": "kg2",
-            "popcurrent": "10",
-            "popmax": "15",
+            "population": "10",
+            "capacity": "15",
             "x": "0",
             "y": "0"
           }
@@ -118,8 +146,8 @@ BLOCKS = {
         {
           "0": {
             "name": "s0",
-            "popcurrent": "10",
-            "popmax": "15",
+            "population": "10",
+            "capacity": "15",
             "x": "0",
             "y": "0"
           }
@@ -127,8 +155,8 @@ BLOCKS = {
         {
           "1": {
             "name": "s1",
-            "popcurrent": "10",
-            "popmax": "15",
+            "population": "10",
+            "capacity": "15",
             "x": "0",
             "y": "0"
           }
@@ -136,8 +164,8 @@ BLOCKS = {
         {
           "2": {
             "name": "s2",
-            "popcurrent": "10",
-            "popmax": "15",
+            "population": "10",
+            "capacity": "15",
             "x": "0",
             "y": "0"
           }
@@ -147,7 +175,7 @@ BLOCKS = {
         {
           "0": {
             "name": "p0",
-            "popmax": "15",
+            "capacity": "15",
             "x": "0",
             "y": "0"
           }
@@ -155,7 +183,7 @@ BLOCKS = {
         {
           "1": {
             "name": "p1",
-            "popmax": "15",
+            "capacity": "15",
             "x": "0",
             "y": "0"
           }
@@ -163,7 +191,7 @@ BLOCKS = {
         {
           "2": {
             "name": "p2",
-            "popmax": "15",
+            "capacity": "15",
             "x": "0",
             "y": "0"
           }
@@ -173,8 +201,8 @@ BLOCKS = {
         {
           "0": {
             "name": "c0",
-            "popcurrent": "10",
-            "popmax": "15",
+            "population": "10",
+            "capacity": "15",
             "x": "0",
             "y": "0"
           }
@@ -182,8 +210,8 @@ BLOCKS = {
         {
           "1": {
             "name": "c1",
-            "popcurrent": "10",
-            "popmax": "15",
+            "population": "10",
+            "capacity": "15",
             "x": "0",
             "y": "0"
           }
@@ -191,8 +219,8 @@ BLOCKS = {
         {
           "2": {
             "name": "c2",
-            "popcurrent": "10",
-            "popmax": "15",
+            "population": "10",
+            "capacity": "15",
             "x": "0",
             "y": "0"
           }
@@ -202,8 +230,8 @@ BLOCKS = {
         {
           "0": {
             "name": "u0",
-            "popcurrent": "10",
-            "popmax": "15",
+            "population": "10",
+            "capacity": "15",
             "x": "0",
             "y": "0"
           }
@@ -211,8 +239,8 @@ BLOCKS = {
         {
           "1": {
             "name": "u1",
-            "popcurrent": "10",
-            "popmax": "15",
+            "population": "10",
+            "capacity": "15",
             "x": "0",
             "y": "0"
           }
@@ -220,8 +248,8 @@ BLOCKS = {
         {
           "2": {
             "name": "u2",
-            "popcurrent": "10",
-            "popmax": "15",
+            "population": "10",
+            "capacity": "15",
             "x": "0",
             "y": "0"
           }
@@ -231,8 +259,8 @@ BLOCKS = {
         {
           "0": {
             "name": "h1",
-            "popcurrent": "10",
-            "popmax": "15",
+            "population": "10",
+            "capacity": "15",
             "x": "0",
             "y": "0"
           }
@@ -240,8 +268,8 @@ BLOCKS = {
         {
           "1": {
             "name": "h1",
-            "popcurrent": "10",
-            "popmax": "15",
+            "population": "10",
+            "capacity": "15",
             "x": "0",
             "y": "0"
           }
@@ -249,8 +277,8 @@ BLOCKS = {
         {
           "2": {
             "name": "h2",
-            "popcurrent": "10",
-            "popmax": "15",
+            "population": "10",
+            "capacity": "15",
             "x": "0",
             "y": "0"
           }
@@ -260,7 +288,7 @@ BLOCKS = {
         {
           "0": {
             "name": "m0",
-            "popmax": "15",
+            "capacity": "15",
             "x": "0",
             "y": "0"
           }
@@ -268,7 +296,7 @@ BLOCKS = {
         {
           "1": {
             "name": "m1",
-            "popmax": "15",
+            "capacity": "15",
             "x": "0",
             "y": "0"
           }
@@ -276,7 +304,7 @@ BLOCKS = {
         {
           "2": {
             "name": "m2",
-            "popmax": "15",
+            "capacity": "15",
             "x": "0",
             "y": "0"
           }
@@ -286,7 +314,7 @@ BLOCKS = {
         {
           "0": {
             "name": "l0",
-            "popmax": "15",
+            "capacity": "15",
             "x": "0",
             "y": "0"
           }
@@ -294,7 +322,7 @@ BLOCKS = {
         {
           "1": {
             "name": "l1",
-            "popmax": "15",
+            "capacity": "15",
             "x": "0",
             "y": "0"
           }
@@ -302,7 +330,7 @@ BLOCKS = {
         {
           "2": {
             "name": "l2",
-            "popmax": "15",
+            "capacity": "15",
             "x": "0",
             "y": "0"
           }
@@ -313,6 +341,32 @@ BLOCKS = {
       "crime": "100",
       "fire": "50",
       "med": "25"
+    },
+    "generations": {
+      "0": [
+        "0",
+        "6"
+      ],
+      "1": [
+        "7",
+        "17"
+      ],
+      "2": [
+        "18",
+        "25"
+      ],
+      "3": [
+        "26",
+        "39"
+      ],
+      "4": [
+        "40",
+        "64"
+      ],
+      "5": [
+        "65",
+        "200"
+      ]
     }
   },
   "1": {
@@ -362,6 +416,20 @@ BLOCKS = {
             "parks",
             "hospitals"
           ]
+        },
+        "4": {
+          "population": "666",
+          "activities": [
+            "parks",
+            "hospitals"
+          ]
+        },
+        "5": {
+          "population": "666",
+          "activities": [
+            "parks",
+            "hospitals"
+          ]
         }
       },
       "f": {
@@ -394,6 +462,20 @@ BLOCKS = {
             "parks",
             "hospitals"
           ]
+        },
+        "4": {
+          "population": "666",
+          "activities": [
+            "parks",
+            "hospitals"
+          ]
+        },
+        "5": {
+          "population": "666",
+          "activities": [
+            "parks",
+            "hospitals"
+          ]
         }
       }
     },
@@ -402,8 +484,8 @@ BLOCKS = {
         {
           "0": {
             "name": "kg0",
-            "popcurrent": "10",
-            "popmax": "15",
+            "population": "10",
+            "capacity": "15",
             "x": "0",
             "y": "0"
           }
@@ -411,8 +493,8 @@ BLOCKS = {
         {
           "1": {
             "name": "kg1",
-            "popcurrent": "10",
-            "popmax": "15",
+            "population": "10",
+            "capacity": "15",
             "x": "0",
             "y": "0"
           }
@@ -420,8 +502,8 @@ BLOCKS = {
         {
           "2": {
             "name": "kg2",
-            "popcurrent": "10",
-            "popmax": "15",
+            "population": "10",
+            "capacity": "15",
             "x": "0",
             "y": "0"
           }
@@ -431,8 +513,8 @@ BLOCKS = {
         {
           "0": {
             "name": "s0",
-            "popcurrent": "10",
-            "popmax": "15",
+            "population": "10",
+            "capacity": "15",
             "x": "0",
             "y": "0"
           }
@@ -440,8 +522,8 @@ BLOCKS = {
         {
           "1": {
             "name": "s1",
-            "popcurrent": "10",
-            "popmax": "15",
+            "population": "10",
+            "capacity": "15",
             "x": "0",
             "y": "0"
           }
@@ -449,8 +531,8 @@ BLOCKS = {
         {
           "2": {
             "name": "s2",
-            "popcurrent": "10",
-            "popmax": "15",
+            "population": "10",
+            "capacity": "15",
             "x": "0",
             "y": "0"
           }
@@ -460,7 +542,7 @@ BLOCKS = {
         {
           "0": {
             "name": "p0",
-            "popmax": "15",
+            "capacity": "15",
             "x": "0",
             "y": "0"
           }
@@ -468,7 +550,7 @@ BLOCKS = {
         {
           "1": {
             "name": "p1",
-            "popmax": "15",
+            "capacity": "15",
             "x": "0",
             "y": "0"
           }
@@ -476,7 +558,7 @@ BLOCKS = {
         {
           "2": {
             "name": "p2",
-            "popmax": "15",
+            "capacity": "15",
             "x": "0",
             "y": "0"
           }
@@ -486,8 +568,8 @@ BLOCKS = {
         {
           "0": {
             "name": "c0",
-            "popcurrent": "10",
-            "popmax": "15",
+            "population": "10",
+            "capacity": "15",
             "x": "0",
             "y": "0"
           }
@@ -495,8 +577,8 @@ BLOCKS = {
         {
           "1": {
             "name": "c1",
-            "popcurrent": "10",
-            "popmax": "15",
+            "population": "10",
+            "capacity": "15",
             "x": "0",
             "y": "0"
           }
@@ -504,8 +586,8 @@ BLOCKS = {
         {
           "2": {
             "name": "c2",
-            "popcurrent": "10",
-            "popmax": "15",
+            "population": "10",
+            "capacity": "15",
             "x": "0",
             "y": "0"
           }
@@ -515,8 +597,8 @@ BLOCKS = {
         {
           "0": {
             "name": "u0",
-            "popcurrent": "10",
-            "popmax": "15",
+            "population": "10",
+            "capacity": "15",
             "x": "0",
             "y": "0"
           }
@@ -524,8 +606,8 @@ BLOCKS = {
         {
           "1": {
             "name": "u1",
-            "popcurrent": "10",
-            "popmax": "15",
+            "population": "10",
+            "capacity": "15",
             "x": "0",
             "y": "0"
           }
@@ -533,8 +615,8 @@ BLOCKS = {
         {
           "2": {
             "name": "u2",
-            "popcurrent": "10",
-            "popmax": "15",
+            "population": "10",
+            "capacity": "15",
             "x": "0",
             "y": "0"
           }
@@ -544,8 +626,8 @@ BLOCKS = {
         {
           "0": {
             "name": "h1",
-            "popcurrent": "10",
-            "popmax": "15",
+            "population": "10",
+            "capacity": "15",
             "x": "0",
             "y": "0"
           }
@@ -553,8 +635,8 @@ BLOCKS = {
         {
           "1": {
             "name": "h1",
-            "popcurrent": "10",
-            "popmax": "15",
+            "population": "10",
+            "capacity": "15",
             "x": "0",
             "y": "0"
           }
@@ -562,8 +644,8 @@ BLOCKS = {
         {
           "2": {
             "name": "h2",
-            "popcurrent": "10",
-            "popmax": "15",
+            "population": "10",
+            "capacity": "15",
             "x": "0",
             "y": "0"
           }
@@ -573,7 +655,7 @@ BLOCKS = {
         {
           "0": {
             "name": "m0",
-            "popmax": "15",
+            "capacity": "15",
             "x": "0",
             "y": "0"
           }
@@ -581,7 +663,7 @@ BLOCKS = {
         {
           "1": {
             "name": "m1",
-            "popmax": "15",
+            "capacity": "15",
             "x": "0",
             "y": "0"
           }
@@ -589,7 +671,7 @@ BLOCKS = {
         {
           "2": {
             "name": "m2",
-            "popmax": "15",
+            "capacity": "15",
             "x": "0",
             "y": "0"
           }
@@ -599,7 +681,7 @@ BLOCKS = {
         {
           "0": {
             "name": "l0",
-            "popmax": "15",
+            "capacity": "15",
             "x": "0",
             "y": "0"
           }
@@ -607,7 +689,7 @@ BLOCKS = {
         {
           "1": {
             "name": "l1",
-            "popmax": "15",
+            "capacity": "15",
             "x": "0",
             "y": "0"
           }
@@ -615,7 +697,7 @@ BLOCKS = {
         {
           "2": {
             "name": "l2",
-            "popmax": "15",
+            "capacity": "15",
             "x": "0",
             "y": "0"
           }
@@ -626,6 +708,32 @@ BLOCKS = {
       "crime": "100",
       "fire": "50",
       "med": "25"
+    },
+    "generations": {
+      "0": [
+        "0",
+        "6"
+      ],
+      "1": [
+        "7",
+        "17"
+      ],
+      "2": [
+        "18",
+        "25"
+      ],
+      "3": [
+        "26",
+        "39"
+      ],
+      "4": [
+        "40",
+        "64"
+      ],
+      "5": [
+        "65",
+        "200"
+      ]
     }
   }
 }
@@ -665,9 +773,15 @@ def read_emergencies(blocknumber):
             404, "block with number {blocknumber} not found".format(blocknumber=blocknumber)
         )
 
+def read_generations(blocknumber):
+    if blocknumber in BLOCKS:
+        return BLOCKS.get(blocknumber)["generations"]
+    else:
+        abort(
+            404, "block with number {blocknumber} not found".format(blocknumber=blocknumber)
+        )
+
 def read_people(blocknumber, sex, generation):
-#    return sorted(BLOCKS.get(blocknumber)["people"].keys())
-#    return sorted(BLOCKS.get(blocknumber)["people"][sex].keys())
     if (blocknumber in BLOCKS) and (sex in sorted(BLOCKS.get(blocknumber)["people"].keys())) and (generation in sorted(BLOCKS.get(blocknumber)["people"][sex].keys())):
         return BLOCKS.get(blocknumber)["people"][sex][generation]
     else:
