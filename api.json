@@ -66,12 +66,159 @@
       }
     ],
     "objects": {
-      "kidgardens": "10",
-      "schools": "15",
-      "parks": "3",
-      "colleges": "5",
-      "universities": "1",
-      "hospitals": "1"
+      "kidgardens": [
+        {
+          "0": {
+            "popcurrent": "10",
+            "popmax": "15",
+            "x": "0",
+            "y": "0"
+          }
+        },
+        {
+          "1": {
+            "popcurrent": "10",
+            "popmax": "15",
+            "x": "0",
+            "y": "0"
+          }
+        },
+        {
+          "2": {
+            "popcurrent": "10",
+            "popmax": "15",
+            "x": "0",
+            "y": "0"
+          }
+        }
+      ],
+      "schools": [
+        {
+          "0": {
+            "popcurrent": "10",
+            "popmax": "15",
+            "x": "0",
+            "y": "0"
+          }
+        },
+        {
+          "1": {
+            "popcurrent": "10",
+            "popmax": "15",
+            "x": "0",
+            "y": "0"
+          }
+        },
+        {
+          "2": {
+            "popcurrent": "10",
+            "popmax": "15",
+            "x": "0",
+            "y": "0"
+          }
+        }
+      ],
+      "parks": [
+        {
+          "0": {
+            "popmax": "15",
+            "x": "0",
+            "y": "0"
+          }
+        },
+        {
+          "1": {
+            "popmax": "15",
+            "x": "0",
+            "y": "0"
+          }
+        },
+        {
+          "2": {
+            "popmax": "15",
+            "x": "0",
+            "y": "0"
+          }
+        }
+      ],
+      "colleges": [
+        {
+          "0": {
+            "popcurrent": "10",
+            "popmax": "15",
+            "x": "0",
+            "y": "0"
+          }
+        },
+        {
+          "1": {
+            "popcurrent": "10",
+            "popmax": "15",
+            "x": "0",
+            "y": "0"
+          }
+        },
+        {
+          "2": {
+            "popcurrent": "10",
+            "popmax": "15",
+            "x": "0",
+            "y": "0"
+          }
+        }
+      ],
+      "universities": [
+        {
+          "0": {
+            "popcurrent": "10",
+            "popmax": "15",
+            "x": "0",
+            "y": "0"
+          }
+        },
+        {
+          "1": {
+            "popcurrent": "10",
+            "popmax": "15",
+            "x": "0",
+            "y": "0"
+          }
+        },
+        {
+          "2": {
+            "popcurrent": "10",
+            "popmax": "15",
+            "x": "0",
+            "y": "0"
+          }
+        }
+      ],
+      "hospitals": [
+        {
+          "0": {
+            "popcurrent": "10",
+            "popmax": "15",
+            "x": "0",
+            "y": "0"
+          }
+        },
+        {
+          "1": {
+            "popcurrent": "10",
+            "popmax": "15",
+            "x": "0",
+            "y": "0"
+          }
+        },
+        {
+          "2": {
+            "popcurrent": "10",
+            "popmax": "15",
+            "x": "0",
+            "y": "0"
+          }
+        }
+      ]
     },
     "emergencies": {
       "crime": "100",
@@ -146,12 +293,159 @@
       }
     ],
     "objects": {
-      "kidgardens": "10",
-      "schools": "15",
-      "parks": "3",
-      "colleges": "5",
-      "universities": "1",
-      "hospitals": "1"
+      "kidgardens": [
+        {
+          "0": {
+            "popcurrent": "10",
+            "popmax": "15",
+            "x": "0",
+            "y": "0"
+          }
+        },
+        {
+          "1": {
+            "popcurrent": "10",
+            "popmax": "15",
+            "x": "0",
+            "y": "0"
+          }
+        },
+        {
+          "2": {
+            "popcurrent": "10",
+            "popmax": "15",
+            "x": "0",
+            "y": "0"
+          }
+        }
+      ],
+      "schools": [
+        {
+          "0": {
+            "popcurrent": "10",
+            "popmax": "15",
+            "x": "0",
+            "y": "0"
+          }
+        },
+        {
+          "1": {
+            "popcurrent": "10",
+            "popmax": "15",
+            "x": "0",
+            "y": "0"
+          }
+        },
+        {
+          "2": {
+            "popcurrent": "10",
+            "popmax": "15",
+            "x": "0",
+            "y": "0"
+          }
+        }
+      ],
+      "parks": [
+        {
+          "0": {
+            "popmax": "15",
+            "x": "0",
+            "y": "0"
+          }
+        },
+        {
+          "1": {
+            "popmax": "15",
+            "x": "0",
+            "y": "0"
+          }
+        },
+        {
+          "2": {
+            "popmax": "15",
+            "x": "0",
+            "y": "0"
+          }
+        }
+      ],
+      "colleges": [
+        {
+          "0": {
+            "popcurrent": "10",
+            "popmax": "15",
+            "x": "0",
+            "y": "0"
+          }
+        },
+        {
+          "1": {
+            "popcurrent": "10",
+            "popmax": "15",
+            "x": "0",
+            "y": "0"
+          }
+        },
+        {
+          "2": {
+            "popcurrent": "10",
+            "popmax": "15",
+            "x": "0",
+            "y": "0"
+          }
+        }
+      ],
+      "universities": [
+        {
+          "0": {
+            "popcurrent": "10",
+            "popmax": "15",
+            "x": "0",
+            "y": "0"
+          }
+        },
+        {
+          "1": {
+            "popcurrent": "10",
+            "popmax": "15",
+            "x": "0",
+            "y": "0"
+          }
+        },
+        {
+          "2": {
+            "popcurrent": "10",
+            "popmax": "15",
+            "x": "0",
+            "y": "0"
+          }
+        }
+      ],
+      "hospitals": [
+        {
+          "0": {
+            "popcurrent": "10",
+            "popmax": "15",
+            "x": "0",
+            "y": "0"
+          }
+        },
+        {
+          "1": {
+            "popcurrent": "10",
+            "popmax": "15",
+            "x": "0",
+            "y": "0"
+          }
+        },
+        {
+          "2": {
+            "popcurrent": "10",
+            "popmax": "15",
+            "x": "0",
+            "y": "0"
+          }
+        }
+      ]
     },
     "emergencies": {
       "crime": "100",
