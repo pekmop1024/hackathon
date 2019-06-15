@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>Анкета</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="css/style-min.css">
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic-ext" rel="stylesheet"> 
+</head>
+	<body>
+		<header>
+			<nav>
+				<ul>
+					<li>
+						Аренда
+					</li>
+					<li>
+						Покупка
+					</li>
+					<li>
+						Строительство
+					</li>
+
+				</ul>
+			</nav>
+		</header>
+
+		<main>
+ 			<h1>Поиск жилья</h1>
+ 			<p>Опиcание сервиса</p>
+
+ 			<form>
+ 				<div class="">
+ 					<h2>Средний возраст населения</h2>
+ 					<input type="radio" name="mid-age" value="young" id="young-age" checked>
+ 					<label for="young-age">Молодой</label>
+ 					<input type="radio" name="mid-age" value="middle" id="mid-age">
+ 					<label for="mid-age">Средний</label>
+ 					<input type="radio" name="mid-age" value="old" id="old-age">
+ 					<label for="old-age">Пожилой</label>
+ 				</div>
+ 				<div class="">
+ 					<h3>Инфраструктура:</h3>
+ 					<div>
+ 						<h3>Количество школ</h3>
+ 						<input type="radio" name="school" value="low" id="low-school" checked>
+ 						<label for="low-school">Мало</label>
+ 						<input type="radio" name="school" value="middle" id="mid-school">
+ 						<label for="mid-school">Средне</label>
+ 						<input type="radio" name="school" value="old" id="high-school">
+ 						<label for="high-school">Много</label>
+ 					</div>
+ 					<div>
+ 						<h3>Количество объектов торговли</h3>
+ 						<input type="radio" name="store" value="low" id="store-low" checked>
+ 						<label for="store-low">Мало</label>
+ 						<input type="radio" name="store" value="medium" id="store-medium">
+ 						<label for="store-medium">Средне</label>
+ 						<input type="radio" name="store" value="high" id="store-high">
+ 						<label for="store-high">Много</label>
+ 					</div>
+ 					<div>
+ 						<h3>Количество предприятий здравоохранения:</h3>
+ 						<input type="radio" name="health" value="low" id="health-low" checked>
+ 						<label for="health-low">Мало</label>
+ 						<input type="radio" name="health" value="medium" id="health-mid">
+ 						<label for="health-mid">Cредне</label>
+ 						<input type="radio" name="health" value="high" id="health-high">
+ 						<label for="health-high">Много</label>
+ 					</div>
+
+ 				</div>
+ 				<button class="order" onclick="document.querySelector('.map-result').classList.remove('hidden')" type="button">Найти</button>
+ 			</form>
+ 			<section class="map-result hidden" >
+ 				<h2>Карта c результатами</h2>
+
+ 			</section>
+
+ 			<section class="error-popup hidden">
+ 				<h2>Ошибка</h2>
+ 			</section>
+		</main>
+
+		<footer>
+ 	
+		</footer>
+	<!-- <script src="Js/index.js"></script> -->
+	</body>
+</html>
