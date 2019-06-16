@@ -1,8 +1,8 @@
 swagger: "2.0"
 info:
-  description: This is the swagger file that goes with our server code
+  description: Hackathon REST API
   version: "1.0.0"
-  title: Swagger REST Article
+  title: Hackathon REST API
 consumes:
   - "application/json"
 produces:
@@ -132,6 +132,34 @@ paths:
             items:
               properties:
                 generations:
+                  type: "array"
+
+  /block/{blocknumber}/people/{sex}:
+    get:
+      operationId: "block.read_people_sex"
+      tags:
+        - block
+      summary: "certain sex people"
+      description: "preferred activities and population of certain sex people"
+      parameters:
+        - name: blocknumber
+          in: path
+          description: block number
+          type: string
+          required: True
+        - name: sex
+          in: path
+          description: people sex
+          type: string
+          required: True
+      responses:
+        200:
+          description: "successful read block people operation"
+          schema:
+            type: "array"
+            items:
+              properties:
+                sex:
                   type: "array"
 
   /block/{blocknumber}/people/{sex}/{generation}:
