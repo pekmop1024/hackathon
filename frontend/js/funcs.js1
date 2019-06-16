@@ -1,0 +1,282 @@
+﻿ymaps.ready(init);
+
+var places=[];
+
+function init() {
+    var myMap = new ymaps.Map("map", {
+            center: [44.958375, 34.110022],
+            zoom: 12
+        }, {
+            searchControlProvider: 'yandex#search'
+        }),
+
+    // Создаем геообъект с типом геометрии "Точка".
+        myGeoObject = new ymaps.GeoObject({
+            // Описание геометрии.
+            geometry: {
+                type: "Point",
+                coordinates: [44.956802, 34.135246]
+            },
+            // Свойства.
+            properties: {
+                // Контент метки.
+                iconContent: 'Здесь что-то есть',
+                hintContent: 'Ну давай уже тащи'
+            }
+        }, {
+            // Опции.
+            // Иконка метки будет растягиваться под размер ее содержимого.
+            preset: 'islands#blackStretchyIcon',
+            // Метку можно перемещать.
+            draggable: true
+        }),
+        myPieChart = new ymaps.Placemark([
+            44.961, 34.107
+        ], {
+            // Данные для построения диаграммы.
+            data: [
+                {weight: 12, color: '#0E4779'},
+                {weight: 6, color: '#1E98FF'},
+                {weight: 4, color: '#82CDFF'}
+            ],
+            iconCaption: "Диаграмма"
+        }, {
+            // Зададим произвольный макет метки.
+            iconLayout: 'default#pieChart',
+            // Радиус диаграммы в пикселях.
+            iconPieChartRadius: 30,
+            // Радиус центральной части макета.
+            iconPieChartCoreRadius: 10,
+            // Стиль заливки центральной части.
+            iconPieChartCoreFillStyle: '#ffffff',
+            // Cтиль линий-разделителей секторов и внешней обводки диаграммы.
+            iconPieChartStrokeStyle: '#ffffff',
+            // Ширина линий-разделителей секторов и внешней обводки диаграммы.
+            iconPieChartStrokeWidth: 3,
+            // Максимальная ширина подписи метки.
+            iconPieChartCaptionMaxWidth: 200
+        });
+
+    myMap.geoObjects
+        .add(myGeoObject)
+        .add(myPieChart)
+        .add(new ymaps.Placemark([44.94, 34.14], {
+            balloonContent: 'цвет <strong>воды пляжа бонди</strong>'
+        }, {
+            preset: 'islands#icon',
+            iconColor: '#0095b6'
+        }))
+        .add(new ymaps.Placemark([44.94, 34.14], {
+            balloonContent: '<strong>серобуромалиновый</strong> цвет'
+        }, {
+            preset: 'islands#dotIcon',
+            iconColor: '#735184'
+        }))
+        .add(new ymaps.Placemark([44.95, 34.15], {
+            balloonContent: 'цвет <strong>влюбленной жабы</strong>'
+        }, {
+            preset: 'islands#circleIcon',
+            iconColor: '#3caa3c'
+        }))
+        .add(new ymaps.Placemark([55.782392, 37.614924], {
+            balloonContent: 'цвет <strong>детской неожиданности</strong>'
+        }, {
+            preset: 'islands#circleDotIcon',
+            iconColor: 'yellow'
+        }))
+        .add(new ymaps.Placemark([55.642063, 37.656123], {
+            balloonContent: 'цвет <strong>красный</strong>'
+        }, {
+            preset: 'islands#redSportIcon'
+        }))
+        .add(new ymaps.Placemark([55.826479, 37.487208], {
+            balloonContent: 'цвет <strong>фэйсбука</strong>'
+        }, {
+            preset: 'islands#governmentCircleIcon',
+            iconColor: '#3b5998'
+        }))
+        .add(new ymaps.Placemark([55.694843, 37.435023], {
+            balloonContent: 'цвет <strong>носика Гены</strong>',
+            iconCaption: 'Очень длиннный, но невероятно интересный текст'
+        }, {
+            preset: 'islands#greenDotIconWithCaption'
+        }))
+        .add(new ymaps.Placemark([55.790139, 37.814052], {
+            balloonContent: 'цвет <strong>голубой</strong>',
+            iconCaption: 'Очень длиннный, но невероятно интересный текст'
+        }, {
+            preset: 'islands#blueCircleDotIconWithCaption',
+            iconCaptionMaxWidth: '50'
+        }));
+
+            var myGeoObject = new ymaps.GeoObject({
+        // Описываем геометрию геообъекта.
+        geometry: {
+            // Тип геометрии - "Многоугольник".
+            type: "Polygon",
+            // Указываем координаты вершин многоугольника.
+            coordinates: [
+                // Координаты вершин внешнего контура.
+                [
+                    [55.75, 37.80],
+                    [55.80, 37.90],
+                    [55.75, 38.00],
+                    [55.70, 38.00],
+                    [55.70, 37.80]
+                ],
+                // Координаты вершин внутреннего контура.
+                [
+                    [55.75, 37.82],
+                    [55.75, 37.98],
+                    [55.65, 37.90]
+                ]
+            ],
+            // Задаем правило заливки внутренних контуров по алгоритму "nonZero".
+            fillRule: "nonZero"
+        },
+        // Описываем свойства геообъекта.
+        properties:{
+            // Содержимое балуна.
+            balloonContent: "Многоугольник"
+        }
+    }, {
+        // Описываем опции геообъекта.
+        // Цвет заливки.
+        fillColor: '#00FF00',
+        // Цвет обводки.
+        strokeColor: '#0000FF',
+        // Общая прозрачность (как для заливки, так и для обводки).
+        opacity: 0.5,
+        // Ширина обводки.
+        strokeWidth: 5,
+        // Стиль обводки.
+        strokeStyle: 'shortdash'
+    });
+
+    // Добавляем многоугольник на карту.
+    myMap.geoObjects.add(myGeoObject);
+
+    // Создаем многоугольник, используя вспомогательный класс Polygon.
+    var myKPolygon = new ymaps.Polygon([
+        // Указываем координаты вершин многоугольника.
+        // Координаты вершин внешнего контура.
+        [
+            [44.97, 34.10],[44.96, 34.09],[44.95, 34.10],[44.95, 34.13],[44.92, 34.15],[44.95, 34.20],[44.97, 34.20],[45.00, 34.17],[45.01, 34.12]
+        ],
+        // Координаты вершин внутреннего контура.
+        [
+            [55.75, 37.52],
+        ]
+    ], {
+        // Описываем свойства геообъекта.
+        // Содержимое балуна.
+        hintContent: "Киевский"
+    }, {
+        // Задаем опции геообъекта.
+        // Цвет заливки.
+        fillColor: '#00FF9933',
+        // Ширина обводки.
+        strokeWidth: 2
+    });
+
+    // Добавляем многоугольник на карту.
+    myMap.geoObjects.add(myKPolygon);
+    [44.90, 34.10],[44.90, 34.13],[44.92, 34.15],[44.95, 34.13],[44.95, 34.10]
+    // Создаем многоугольник, используя вспомогательный класс Polygon.
+    var myZPolygon = new ymaps.Polygon([
+        // Указываем координаты вершин многоугольника.
+        // Координаты вершин внешнего контура.
+        [
+            [44.97, 34.10],[44.96, 34.09],[44.95, 34.10],[44.90, 34.06],[44.94, 34.03],[44.98, 34.07],[44.99, 34.08]
+        ],
+        // Координаты вершин внутреннего контура.
+        [
+            [55.75, 37.52],
+        ]
+    ], {
+        // Описываем свойства геообъекта.
+        // Содержимое балуна.
+        hintContent: "Железнодорожный"
+    }, {
+        // Задаем опции геообъекта.
+        // Цвет заливки.
+        fillColor: '#00FF5533',
+        // Ширина обводки.
+        strokeWidth: 2
+    });
+
+    // Добавляем многоугольник на карту.
+    myMap.geoObjects.add(myZPolygon);
+
+    
+    // Создаем многоугольник, используя вспомогательный класс Polygon.
+    var myCPolygon = new ymaps.Polygon([
+        // Указываем координаты вершин многоугольника.
+        // Координаты вершин внешнего контура.
+        [
+            [44.9000, 34.0611],[44.90, 34.10],[44.90, 34.13],[44.92, 34.15],[44.95, 34.13],[44.95, 34.10]
+            
+        ],
+        // Координаты вершин внутреннего контура.
+        [
+            [55.75, 37.52],
+        ]
+    ], {
+        // Описываем свойства геообъекта.
+        // Содержимое балуна.
+        hintContent: "Центральный"
+    }, {
+        // Задаем опции геообъекта.
+        // Цвет заливки.
+        fillColor: '#00FF0033',
+        // Ширина обводки.
+        strokeWidth: 2
+    });
+
+    // Добавляем многоугольник на карту.
+    myMap.geoObjects.add(myCPolygon);
+
+
+     myMap.events.add('click', function (e) {
+        if (!myMap.balloon.isOpen()) {
+            var coords = e.get('coords');
+            console.log(places[places.length-1]);
+            places.push({'a':coords[0].toPrecision(4), 'b':coords[1].toPrecision(4)});
+            myMap.balloon.open(coords, {
+                contentHeader:'Событие!',
+                contentBody:'<p>Кто-то щелкнул по карте.</p>' +
+                    '<p>Координаты щелчка: ' + [
+                    coords[0].toPrecision(6),
+                    coords[1].toPrecision(6)
+                    ].join(', ') + '</p>',
+                contentFooter:'<sup>Щелкните еще раз</sup>'
+            });
+        }
+        else {
+            myMap.balloon.close();
+        }
+    });
+
+    // Обработка события, возникающего при щелчке
+    // правой кнопки мыши в любой точке карты.
+    // При возникновении такого события покажем всплывающую подсказку
+    // в точке щелчка.
+    myMap.events.add('contextmenu', function (e) {
+        myMap.hint.open(e.get('coords'), 'Кто-то щелкнул правой кнопкой');
+        var s;
+        var i;
+        i = places.length-1;
+        while (i) {
+         s+='['+places[i].a+', '+places[i].b+'],';
+         i--;
+        }
+        console.log(s);
+    });
+    
+    // Скрываем хинт при открытии балуна.
+    myMap.events.add('balloonopen', function (e) {
+        myMap.hint.close();
+    });
+}
+
+   
