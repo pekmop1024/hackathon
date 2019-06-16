@@ -1,736 +1,742 @@
-{
-  "0": {
-    "blockname": "Центральный",
-    "blockborderpoints": {
-      "0": {
-        "x": "0",
-        "y": "0"
-      },
-      "1": {
-        "x": "0",
-        "y": "0"
-      },
-      "2": {
-        "x": "0",
-        "y": "0"
-      }
-    },
-    "people": {
-      "m": {
+[
+  {
+    "blockid": "0",
+    "blockdata": {
+      "blockname": "Центральный",
+      "blockborderpoints": {
         "0": {
-          "population": "666",
-          "activities": [
-            "kidgardens",
-            "parks"
-          ]
+          "x": "0",
+          "y": "0"
         },
         "1": {
-          "population": "666",
-          "activities": [
-            "schools",
-            "colleges",
-            "parks"
-          ]
+          "x": "0",
+          "y": "0"
         },
         "2": {
-          "population": "666",
-          "activities": [
-            "universities",
-            "parks",
-            "bars"
-          ]
-        },
-        "3": {
-          "population": "666",
-          "activities": [
-            "parks",
-            "hospitals"
-          ]
-        },
-        "4": {
-          "population": "666",
-          "activities": [
-            "parks",
-            "hospitals"
-          ]
-        },
-        "5": {
-          "population": "666",
-          "activities": [
-            "parks",
-            "hospitals"
-          ]
+          "x": "0",
+          "y": "0"
         }
       },
-      "f": {
+      "people": {
+        "m": {
+          "0": {
+            "population": "666",
+            "activities": [
+              "kidgardens",
+              "parks"
+            ]
+          },
+          "1": {
+            "population": "666",
+            "activities": [
+              "schools",
+              "colleges",
+              "parks"
+            ]
+          },
+          "2": {
+            "population": "666",
+            "activities": [
+              "universities",
+              "parks",
+              "bars"
+            ]
+          },
+          "3": {
+            "population": "666",
+            "activities": [
+              "parks",
+              "hospitals"
+            ]
+          },
+          "4": {
+            "population": "666",
+            "activities": [
+              "parks",
+              "hospitals"
+            ]
+          },
+          "5": {
+            "population": "666",
+            "activities": [
+              "parks",
+              "hospitals"
+            ]
+          }
+        },
+        "f": {
+          "0": {
+            "population": "666",
+            "activities": [
+              "kidgardens",
+              "parks"
+            ]
+          },
+          "1": {
+            "population": "666",
+            "activities": [
+              "schools",
+              "colleges",
+              "parks"
+            ]
+          },
+          "2": {
+            "population": "666",
+            "activities": [
+              "universities",
+              "parks",
+              "bars"
+            ]
+          },
+          "3": {
+            "population": "666",
+            "activities": [
+              "parks",
+              "hospitals"
+            ]
+          },
+          "4": {
+            "population": "666",
+            "activities": [
+              "parks",
+              "hospitals"
+            ]
+          },
+          "5": {
+            "population": "666",
+            "activities": [
+              "parks",
+              "hospitals"
+            ]
+          }
+        }
+      },
+      "objects": {
+        "kidgardens": [
+          {
+            "0": {
+              "name": "kg0",
+              "population": "10",
+              "capacity": "15",
+              "x": "0",
+              "y": "0"
+            }
+          },
+          {
+            "1": {
+              "name": "kg1",
+              "population": "10",
+              "capacity": "15",
+              "x": "0",
+              "y": "0"
+            }
+          },
+          {
+            "2": {
+              "name": "kg2",
+              "population": "10",
+              "capacity": "15",
+              "x": "0",
+              "y": "0"
+            }
+          }
+        ],
+        "schools": [
+          {
+            "0": {
+              "name": "s0",
+              "population": "10",
+              "capacity": "15",
+              "x": "0",
+              "y": "0"
+            }
+          },
+          {
+            "1": {
+              "name": "s1",
+              "population": "10",
+              "capacity": "15",
+              "x": "0",
+              "y": "0"
+            }
+          },
+          {
+            "2": {
+              "name": "s2",
+              "population": "10",
+              "capacity": "15",
+              "x": "0",
+              "y": "0"
+            }
+          }
+        ],
+        "parks": [
+          {
+            "0": {
+              "name": "p0",
+              "capacity": "15",
+              "x": "0",
+              "y": "0"
+            }
+          },
+          {
+            "1": {
+              "name": "p1",
+              "capacity": "15",
+              "x": "0",
+              "y": "0"
+            }
+          },
+          {
+            "2": {
+              "name": "p2",
+              "capacity": "15",
+              "x": "0",
+              "y": "0"
+            }
+          }
+        ],
+        "colleges": [
+          {
+            "0": {
+              "name": "c0",
+              "population": "10",
+              "capacity": "15",
+              "x": "0",
+              "y": "0"
+            }
+          },
+          {
+            "1": {
+              "name": "c1",
+              "population": "10",
+              "capacity": "15",
+              "x": "0",
+              "y": "0"
+            }
+          },
+          {
+            "2": {
+              "name": "c2",
+              "population": "10",
+              "capacity": "15",
+              "x": "0",
+              "y": "0"
+            }
+          }
+        ],
+        "universities": [
+          {
+            "0": {
+              "name": "u0",
+              "population": "10",
+              "capacity": "15",
+              "x": "0",
+              "y": "0"
+            }
+          },
+          {
+            "1": {
+              "name": "u1",
+              "population": "10",
+              "capacity": "15",
+              "x": "0",
+              "y": "0"
+            }
+          },
+          {
+            "2": {
+              "name": "u2",
+              "population": "10",
+              "capacity": "15",
+              "x": "0",
+              "y": "0"
+            }
+          }
+        ],
+        "hospitals": [
+          {
+            "0": {
+              "name": "h1",
+              "population": "10",
+              "capacity": "15",
+              "x": "0",
+              "y": "0"
+            }
+          },
+          {
+            "1": {
+              "name": "h1",
+              "population": "10",
+              "capacity": "15",
+              "x": "0",
+              "y": "0"
+            }
+          },
+          {
+            "2": {
+              "name": "h2",
+              "population": "10",
+              "capacity": "15",
+              "x": "0",
+              "y": "0"
+            }
+          }
+        ],
+        "malls": [
+          {
+            "0": {
+              "name": "m0",
+              "capacity": "15",
+              "x": "0",
+              "y": "0"
+            }
+          },
+          {
+            "1": {
+              "name": "m1",
+              "capacity": "15",
+              "x": "0",
+              "y": "0"
+            }
+          },
+          {
+            "2": {
+              "name": "m2",
+              "capacity": "15",
+              "x": "0",
+              "y": "0"
+            }
+          }
+        ],
+        "leisure": [
+          {
+            "0": {
+              "name": "l0",
+              "capacity": "15",
+              "x": "0",
+              "y": "0"
+            }
+          },
+          {
+            "1": {
+              "name": "l1",
+              "capacity": "15",
+              "x": "0",
+              "y": "0"
+            }
+          },
+          {
+            "2": {
+              "name": "l2",
+              "capacity": "15",
+              "x": "0",
+              "y": "0"
+            }
+          }
+        ]
+      },
+      "emergencies": {
+        "crime": "100",
+        "fire": "50",
+        "med": "25"
+      },
+      "generations": {
         "0": {
-          "population": "666",
-          "activities": [
-            "kidgardens",
-            "parks"
-          ]
+          "min": "0",
+          "max": "6"
         },
         "1": {
-          "population": "666",
-          "activities": [
-            "schools",
-            "colleges",
-            "parks"
-          ]
+          "min": "7",
+          "max": "17"
         },
         "2": {
-          "population": "666",
-          "activities": [
-            "universities",
-            "parks",
-            "bars"
-          ]
+          "min": "18",
+          "max": "25"
         },
         "3": {
-          "population": "666",
-          "activities": [
-            "parks",
-            "hospitals"
-          ]
+          "min": "26",
+          "max": "39"
         },
         "4": {
-          "population": "666",
-          "activities": [
-            "parks",
-            "hospitals"
-          ]
+          "min": "40",
+          "max": "64"
         },
         "5": {
-          "population": "666",
-          "activities": [
-            "parks",
-            "hospitals"
-          ]
+          "min": "65",
+          "max": "200"
         }
-      }
-    },
-    "objects": {
-      "kidgardens": [
-        {
-          "0": {
-            "name": "kg0",
-            "population": "10",
-            "capacity": "15",
-            "x": "0",
-            "y": "0"
-          }
-        },
-        {
-          "1": {
-            "name": "kg1",
-            "population": "10",
-            "capacity": "15",
-            "x": "0",
-            "y": "0"
-          }
-        },
-        {
-          "2": {
-            "name": "kg2",
-            "population": "10",
-            "capacity": "15",
-            "x": "0",
-            "y": "0"
-          }
-        }
-      ],
-      "schools": [
-        {
-          "0": {
-            "name": "s0",
-            "population": "10",
-            "capacity": "15",
-            "x": "0",
-            "y": "0"
-          }
-        },
-        {
-          "1": {
-            "name": "s1",
-            "population": "10",
-            "capacity": "15",
-            "x": "0",
-            "y": "0"
-          }
-        },
-        {
-          "2": {
-            "name": "s2",
-            "population": "10",
-            "capacity": "15",
-            "x": "0",
-            "y": "0"
-          }
-        }
-      ],
-      "parks": [
-        {
-          "0": {
-            "name": "p0",
-            "capacity": "15",
-            "x": "0",
-            "y": "0"
-          }
-        },
-        {
-          "1": {
-            "name": "p1",
-            "capacity": "15",
-            "x": "0",
-            "y": "0"
-          }
-        },
-        {
-          "2": {
-            "name": "p2",
-            "capacity": "15",
-            "x": "0",
-            "y": "0"
-          }
-        }
-      ],
-      "colleges": [
-        {
-          "0": {
-            "name": "c0",
-            "population": "10",
-            "capacity": "15",
-            "x": "0",
-            "y": "0"
-          }
-        },
-        {
-          "1": {
-            "name": "c1",
-            "population": "10",
-            "capacity": "15",
-            "x": "0",
-            "y": "0"
-          }
-        },
-        {
-          "2": {
-            "name": "c2",
-            "population": "10",
-            "capacity": "15",
-            "x": "0",
-            "y": "0"
-          }
-        }
-      ],
-      "universities": [
-        {
-          "0": {
-            "name": "u0",
-            "population": "10",
-            "capacity": "15",
-            "x": "0",
-            "y": "0"
-          }
-        },
-        {
-          "1": {
-            "name": "u1",
-            "population": "10",
-            "capacity": "15",
-            "x": "0",
-            "y": "0"
-          }
-        },
-        {
-          "2": {
-            "name": "u2",
-            "population": "10",
-            "capacity": "15",
-            "x": "0",
-            "y": "0"
-          }
-        }
-      ],
-      "hospitals": [
-        {
-          "0": {
-            "name": "h1",
-            "population": "10",
-            "capacity": "15",
-            "x": "0",
-            "y": "0"
-          }
-        },
-        {
-          "1": {
-            "name": "h1",
-            "population": "10",
-            "capacity": "15",
-            "x": "0",
-            "y": "0"
-          }
-        },
-        {
-          "2": {
-            "name": "h2",
-            "population": "10",
-            "capacity": "15",
-            "x": "0",
-            "y": "0"
-          }
-        }
-      ],
-      "malls": [
-        {
-          "0": {
-            "name": "m0",
-            "capacity": "15",
-            "x": "0",
-            "y": "0"
-          }
-        },
-        {
-          "1": {
-            "name": "m1",
-            "capacity": "15",
-            "x": "0",
-            "y": "0"
-          }
-        },
-        {
-          "2": {
-            "name": "m2",
-            "capacity": "15",
-            "x": "0",
-            "y": "0"
-          }
-        }
-      ],
-      "leisure": [
-        {
-          "0": {
-            "name": "l0",
-            "capacity": "15",
-            "x": "0",
-            "y": "0"
-          }
-        },
-        {
-          "1": {
-            "name": "l1",
-            "capacity": "15",
-            "x": "0",
-            "y": "0"
-          }
-        },
-        {
-          "2": {
-            "name": "l2",
-            "capacity": "15",
-            "x": "0",
-            "y": "0"
-          }
-        }
-      ]
-    },
-    "emergencies": {
-      "crime": "100",
-      "fire": "50",
-      "med": "25"
-    },
-    "generations": {
-      "0": {
-        "min": "0",
-        "max": "6"
-      },
-      "1": {
-        "min": "7",
-        "max": "17"
-      },
-      "2": {
-        "min": "18",
-        "max": "25"
-      },
-      "3": {
-        "min": "26",
-        "max": "39"
-      },
-      "4": {
-        "min": "40",
-        "max": "64"
-      },
-      "5": {
-        "min": "65",
-        "max": "200"
       }
     }
   },
-  "1": {
-    "blockname": "Киевский",
-    "blockborderpoints": {
-      "0": {
-        "x": "0",
-        "y": "0"
-      },
-      "1": {
-        "x": "0",
-        "y": "0"
-      },
-      "2": {
-        "x": "0",
-        "y": "0"
-      }
-    },
-    "people": {
-      "m": {
+  {
+    "blockid": "1",
+    "blockdata": {
+      "blockname": "Киевский",
+      "blockborderpoints": {
         "0": {
-          "population": "666",
-          "activities": [
-            "kidgardens",
-            "parks"
-          ]
+          "x": "0",
+          "y": "0"
         },
         "1": {
-          "population": "666",
-          "activities": [
-            "schools",
-            "colleges",
-            "parks"
-          ]
+          "x": "0",
+          "y": "0"
         },
         "2": {
-          "population": "666",
-          "activities": [
-            "universities",
-            "parks",
-            "bars"
-          ]
-        },
-        "3": {
-          "population": "666",
-          "activities": [
-            "parks",
-            "hospitals"
-          ]
-        },
-        "4": {
-          "population": "666",
-          "activities": [
-            "parks",
-            "hospitals"
-          ]
-        },
-        "5": {
-          "population": "666",
-          "activities": [
-            "parks",
-            "hospitals"
-          ]
+          "x": "0",
+          "y": "0"
         }
       },
-      "f": {
+      "people": {
+        "m": {
+          "0": {
+            "population": "666",
+            "activities": [
+              "kidgardens",
+              "parks"
+            ]
+          },
+          "1": {
+            "population": "666",
+            "activities": [
+              "schools",
+              "colleges",
+              "parks"
+            ]
+          },
+          "2": {
+            "population": "666",
+            "activities": [
+              "universities",
+              "parks",
+              "bars"
+            ]
+          },
+          "3": {
+            "population": "666",
+            "activities": [
+              "parks",
+              "hospitals"
+            ]
+          },
+          "4": {
+            "population": "666",
+            "activities": [
+              "parks",
+              "hospitals"
+            ]
+          },
+          "5": {
+            "population": "666",
+            "activities": [
+              "parks",
+              "hospitals"
+            ]
+          }
+        },
+        "f": {
+          "0": {
+            "population": "666",
+            "activities": [
+              "kidgardens",
+              "parks"
+            ]
+          },
+          "1": {
+            "population": "666",
+            "activities": [
+              "schools",
+              "colleges",
+              "parks"
+            ]
+          },
+          "2": {
+            "population": "666",
+            "activities": [
+              "universities",
+              "parks",
+              "bars"
+            ]
+          },
+          "3": {
+            "population": "666",
+            "activities": [
+              "parks",
+              "hospitals"
+            ]
+          },
+          "4": {
+            "population": "666",
+            "activities": [
+              "parks",
+              "hospitals"
+            ]
+          },
+          "5": {
+            "population": "666",
+            "activities": [
+              "parks",
+              "hospitals"
+            ]
+          }
+        }
+      },
+      "objects": {
+        "kidgardens": [
+          {
+            "0": {
+              "name": "kg0",
+              "population": "10",
+              "capacity": "15",
+              "x": "0",
+              "y": "0"
+            }
+          },
+          {
+            "1": {
+              "name": "kg1",
+              "population": "10",
+              "capacity": "15",
+              "x": "0",
+              "y": "0"
+            }
+          },
+          {
+            "2": {
+              "name": "kg2",
+              "population": "10",
+              "capacity": "15",
+              "x": "0",
+              "y": "0"
+            }
+          }
+        ],
+        "schools": [
+          {
+            "0": {
+              "name": "s0",
+              "population": "10",
+              "capacity": "15",
+              "x": "0",
+              "y": "0"
+            }
+          },
+          {
+            "1": {
+              "name": "s1",
+              "population": "10",
+              "capacity": "15",
+              "x": "0",
+              "y": "0"
+            }
+          },
+          {
+            "2": {
+              "name": "s2",
+              "population": "10",
+              "capacity": "15",
+              "x": "0",
+              "y": "0"
+            }
+          }
+        ],
+        "parks": [
+          {
+            "0": {
+              "name": "p0",
+              "capacity": "15",
+              "x": "0",
+              "y": "0"
+            }
+          },
+          {
+            "1": {
+              "name": "p1",
+              "capacity": "15",
+              "x": "0",
+              "y": "0"
+            }
+          },
+          {
+            "2": {
+              "name": "p2",
+              "capacity": "15",
+              "x": "0",
+              "y": "0"
+            }
+          }
+        ],
+        "colleges": [
+          {
+            "0": {
+              "name": "c0",
+              "population": "10",
+              "capacity": "15",
+              "x": "0",
+              "y": "0"
+            }
+          },
+          {
+            "1": {
+              "name": "c1",
+              "population": "10",
+              "capacity": "15",
+              "x": "0",
+              "y": "0"
+            }
+          },
+          {
+            "2": {
+              "name": "c2",
+              "population": "10",
+              "capacity": "15",
+              "x": "0",
+              "y": "0"
+            }
+          }
+        ],
+        "universities": [
+          {
+            "0": {
+              "name": "u0",
+              "population": "10",
+              "capacity": "15",
+              "x": "0",
+              "y": "0"
+            }
+          },
+          {
+            "1": {
+              "name": "u1",
+              "population": "10",
+              "capacity": "15",
+              "x": "0",
+              "y": "0"
+            }
+          },
+          {
+            "2": {
+              "name": "u2",
+              "population": "10",
+              "capacity": "15",
+              "x": "0",
+              "y": "0"
+            }
+          }
+        ],
+        "hospitals": [
+          {
+            "0": {
+              "name": "h1",
+              "population": "10",
+              "capacity": "15",
+              "x": "0",
+              "y": "0"
+            }
+          },
+          {
+            "1": {
+              "name": "h1",
+              "population": "10",
+              "capacity": "15",
+              "x": "0",
+              "y": "0"
+            }
+          },
+          {
+            "2": {
+              "name": "h2",
+              "population": "10",
+              "capacity": "15",
+              "x": "0",
+              "y": "0"
+            }
+          }
+        ],
+        "malls": [
+          {
+            "0": {
+              "name": "m0",
+              "capacity": "15",
+              "x": "0",
+              "y": "0"
+            }
+          },
+          {
+            "1": {
+              "name": "m1",
+              "capacity": "15",
+              "x": "0",
+              "y": "0"
+            }
+          },
+          {
+            "2": {
+              "name": "m2",
+              "capacity": "15",
+              "x": "0",
+              "y": "0"
+            }
+          }
+        ],
+        "leisure": [
+          {
+            "0": {
+              "name": "l0",
+              "capacity": "15",
+              "x": "0",
+              "y": "0"
+            }
+          },
+          {
+            "1": {
+              "name": "l1",
+              "capacity": "15",
+              "x": "0",
+              "y": "0"
+            }
+          },
+          {
+            "2": {
+              "name": "l2",
+              "capacity": "15",
+              "x": "0",
+              "y": "0"
+            }
+          }
+        ]
+      },
+      "emergencies": {
+        "crime": "100",
+        "fire": "50",
+        "med": "25"
+      },
+      "generations": {
         "0": {
-          "population": "666",
-          "activities": [
-            "kidgardens",
-            "parks"
-          ]
+          "min": "0",
+          "max": "6"
         },
         "1": {
-          "population": "666",
-          "activities": [
-            "schools",
-            "colleges",
-            "parks"
-          ]
+          "min": "7",
+          "max": "17"
         },
         "2": {
-          "population": "666",
-          "activities": [
-            "universities",
-            "parks",
-            "bars"
-          ]
+          "min": "18",
+          "max": "25"
         },
         "3": {
-          "population": "666",
-          "activities": [
-            "parks",
-            "hospitals"
-          ]
+          "min": "26",
+          "max": "39"
         },
         "4": {
-          "population": "666",
-          "activities": [
-            "parks",
-            "hospitals"
-          ]
+          "min": "40",
+          "max": "64"
         },
         "5": {
-          "population": "666",
-          "activities": [
-            "parks",
-            "hospitals"
-          ]
+          "min": "65",
+          "max": "200"
         }
-      }
-    },
-    "objects": {
-      "kidgardens": [
-        {
-          "0": {
-            "name": "kg0",
-            "population": "10",
-            "capacity": "15",
-            "x": "0",
-            "y": "0"
-          }
-        },
-        {
-          "1": {
-            "name": "kg1",
-            "population": "10",
-            "capacity": "15",
-            "x": "0",
-            "y": "0"
-          }
-        },
-        {
-          "2": {
-            "name": "kg2",
-            "population": "10",
-            "capacity": "15",
-            "x": "0",
-            "y": "0"
-          }
-        }
-      ],
-      "schools": [
-        {
-          "0": {
-            "name": "s0",
-            "population": "10",
-            "capacity": "15",
-            "x": "0",
-            "y": "0"
-          }
-        },
-        {
-          "1": {
-            "name": "s1",
-            "population": "10",
-            "capacity": "15",
-            "x": "0",
-            "y": "0"
-          }
-        },
-        {
-          "2": {
-            "name": "s2",
-            "population": "10",
-            "capacity": "15",
-            "x": "0",
-            "y": "0"
-          }
-        }
-      ],
-      "parks": [
-        {
-          "0": {
-            "name": "p0",
-            "capacity": "15",
-            "x": "0",
-            "y": "0"
-          }
-        },
-        {
-          "1": {
-            "name": "p1",
-            "capacity": "15",
-            "x": "0",
-            "y": "0"
-          }
-        },
-        {
-          "2": {
-            "name": "p2",
-            "capacity": "15",
-            "x": "0",
-            "y": "0"
-          }
-        }
-      ],
-      "colleges": [
-        {
-          "0": {
-            "name": "c0",
-            "population": "10",
-            "capacity": "15",
-            "x": "0",
-            "y": "0"
-          }
-        },
-        {
-          "1": {
-            "name": "c1",
-            "population": "10",
-            "capacity": "15",
-            "x": "0",
-            "y": "0"
-          }
-        },
-        {
-          "2": {
-            "name": "c2",
-            "population": "10",
-            "capacity": "15",
-            "x": "0",
-            "y": "0"
-          }
-        }
-      ],
-      "universities": [
-        {
-          "0": {
-            "name": "u0",
-            "population": "10",
-            "capacity": "15",
-            "x": "0",
-            "y": "0"
-          }
-        },
-        {
-          "1": {
-            "name": "u1",
-            "population": "10",
-            "capacity": "15",
-            "x": "0",
-            "y": "0"
-          }
-        },
-        {
-          "2": {
-            "name": "u2",
-            "population": "10",
-            "capacity": "15",
-            "x": "0",
-            "y": "0"
-          }
-        }
-      ],
-      "hospitals": [
-        {
-          "0": {
-            "name": "h1",
-            "population": "10",
-            "capacity": "15",
-            "x": "0",
-            "y": "0"
-          }
-        },
-        {
-          "1": {
-            "name": "h1",
-            "population": "10",
-            "capacity": "15",
-            "x": "0",
-            "y": "0"
-          }
-        },
-        {
-          "2": {
-            "name": "h2",
-            "population": "10",
-            "capacity": "15",
-            "x": "0",
-            "y": "0"
-          }
-        }
-      ],
-      "malls": [
-        {
-          "0": {
-            "name": "m0",
-            "capacity": "15",
-            "x": "0",
-            "y": "0"
-          }
-        },
-        {
-          "1": {
-            "name": "m1",
-            "capacity": "15",
-            "x": "0",
-            "y": "0"
-          }
-        },
-        {
-          "2": {
-            "name": "m2",
-            "capacity": "15",
-            "x": "0",
-            "y": "0"
-          }
-        }
-      ],
-      "leisure": [
-        {
-          "0": {
-            "name": "l0",
-            "capacity": "15",
-            "x": "0",
-            "y": "0"
-          }
-        },
-        {
-          "1": {
-            "name": "l1",
-            "capacity": "15",
-            "x": "0",
-            "y": "0"
-          }
-        },
-        {
-          "2": {
-            "name": "l2",
-            "capacity": "15",
-            "x": "0",
-            "y": "0"
-          }
-        }
-      ]
-    },
-    "emergencies": {
-      "crime": "100",
-      "fire": "50",
-      "med": "25"
-    },
-    "generations": {
-      "0": {
-        "min": "0",
-        "max": "6"
-      },
-      "1": {
-        "min": "7",
-        "max": "17"
-      },
-      "2": {
-        "min": "18",
-        "max": "25"
-      },
-      "3": {
-        "min": "26",
-        "max": "39"
-      },
-      "4": {
-        "min": "40",
-        "max": "64"
-      },
-      "5": {
-        "min": "65",
-        "max": "200"
       }
     }
   }
-}
+]

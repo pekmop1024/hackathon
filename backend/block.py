@@ -1,67 +1,69 @@
-from flask import make_response, abort
 import json
+import pymongo
+from flask import make_response, abort
+from bson.objectid import ObjectId
 
-def get_data(datafile):
-    with open(datafile, 'r') as jsondata:
-        return json.load(jsondata)
-
-BLOCKS = get_data('block.json')
+data = pymongo.MongoClient("mongodb://hackathon:YQ7YPlNsI96nNI57@localhost:27017/")
+blocks = list(data["hackathon"]["block"].find({},{"_id": 0, "blockdata": 0 }))
 
 def read(blocknumber):
-    if blocknumber in BLOCKS:
-        return {"blockname": BLOCKS.get(blocknumber)["blockname"], "blockborderpoints": BLOCKS.get(blocknumber)["blockborderpoints"] }
+    if ({"blockid": blocknumber} in blocks):
+        block = list(data["hackathon"]["block"].find({"blockid": blocknumber}))[0]["blockdata"]
+        return {"blockname": block["blockname"], "blockborderpoints": block["blockborderpoints"] }
     else:
         abort(
             404, "block with number {blocknumber} not found".format(blocknumber=blocknumber)
         )
 
-    return block
 
 def read_object_types(blocknumber):
-    if blocknumber in BLOCKS:
-        return sorted(BLOCKS.get(blocknumber)["objects"].keys())
+    if ({"blockid": blocknumber} in blocks):
+        return sorted(list(data["hackathon"]["block"].find({"blockid": blocknumber}))[0]["blockdata"]["objects"].keys())
     else:
         abort(
             404, "block with number {blocknumber} not found".format(blocknumber=blocknumber)
         )
 
 def read_object(blocknumber, blockobjecttype):
-    if blockobjecttype in sorted(BLOCKS.get(blocknumber)["objects"].keys()):
-        return BLOCKS.get(blocknumber)["objects"][blockobjecttype]
+    if blockobjecttype in sorted(list(data["hackathon"]["block"].find({"blockid": blocknumber}))[0]["blockdata"]["objects"].keys()):
+        return list(data["hackathon"]["block"].find({"blockid": blocknumber}))[0]["blockdata"]["objects"][blockobjecttype]
     else:
         abort(
             404, "block object with type {blockobjecttype} not found".format(blockobjecttype=blockobjecttype)
         )
 
 def read_emergencies(blocknumber):
-    if blocknumber in BLOCKS:
-        return BLOCKS.get(blocknumber)["emergencies"]
+    if ({"blockid": blocknumber} in blocks):
+        return list(data["hackathon"]["block"].find({"blockid": blocknumber}))[0]["blockdata"]["emergencies"]
     else:
         abort(
             404, "block with number {blocknumber} not found".format(blocknumber=blocknumber)
         )
 
 def read_generations(blocknumber):
-    if blocknumber in BLOCKS:
-        return BLOCKS.get(blocknumber)["generations"]
+    if blocknumber in blocks:
+        return list(data["hackathon"]["block"].find({"blockid": blocknumber}))[0]["blockdata"]["generations"]
     else:
         abort(
             404, "block with number {blocknumber} not found".format(blocknumber=blocknumber)
         )
 
 def read_people(blocknumber, sex, generation):
-    if (blocknumber in BLOCKS) and (sex in sorted(BLOCKS.get(blocknumber)["people"].keys())) and (generation in sorted(BLOCKS.get(blocknumber)["people"][sex].keys())):
-        return BLOCKS.get(blocknumber)["people"][sex][generation]
+    sexes = list(list(data["hackathon"]["block"].find({"blockid": "0"}))[0]["blockdata"]["people"].keys())
+    generations = list(list(data["hackathon"]["block"].find({"blockid": "0"}))[0]["blockdata"]["people"]["m"].keys())
+    if ({"blockid": blocknumber} in blocks) and (sex in sexes) and (generation in generations):
+        return list(data["hackathon"]["block"].find({"blockid": blocknumber}))[0]["blockdata"]["people"][sex][generation]
     else:
         abort(
             404, "block/sex/generation not found"
         )
 
 def read_people_sex(blocknumber, sex):
-    if (blocknumber in BLOCKS) and (sex in sorted(BLOCKS.get(blocknumber)["people"].keys())):
-        return BLOCKS.get(blocknumber)["people"][sex]
+    sexes = list(list(data["hackathon"]["block"].find({"blockid": "0"}))[0]["blockdata"]["people"].keys())
+    if ({"blockid": blocknumber} in blocks) and (sex in sexes):
+        return list(data["hackathon"]["block"].find({"blockid": blocknumber}))[0]["blockdata"]["people"][sex]
     else:
         abort(
-            404, "block/sex/generation not found"
+            404, "block/sex not found"
         )
 
