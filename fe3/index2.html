@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>Поиск жилья</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic-ext" rel="stylesheet"> 
+</head>
+	<body>
+		<section class="parameters">
+			<h1>Зона комфорта</h1>
+ 			<p style="font-size:smaller;">Данное приложение предназначено для выбора района города с подходящей именно вам инфраструктурой. При выборе необходимых вам параметров обратите внимание, что показатели отражают данные в рамках отдельных районов конкретного города. Если вы не выбрали какой-либо из пунктов - соответствующий критерий в поиске учавствовать не будет. </p>
+ 			<input type="radio" name="typeOfSearch" id="personal" checked>
+			<label for="personal" tabindex="0">Аренда/Покупка</label>
+			<input type="radio" name="typeOfSearch" id="building">
+			<label for="building" tabindex="0">Строительство</label>  			
+ 			
+ 			<form class="personal" onsubmit="return false">
+ 			<div class="age">
+				<h2>Ваш возраст:</h2>
+				<input type="radio" name="age" id="0" value=2 hidden checked>
+				<label for="0" tabindex="0">18-25</label>
+				<input type="radio" name="age" id="1" value=3 hidden>
+				<label for="1" tabindex="0">26-39</label>
+				<input type="radio" name="age" id="2" value=4 hidden>
+				<label for="2" tabindex="0">40-64</label>
+				<input type="radio" name="age" id="3" value=5 hidden>
+				<label for="3" tabindex="0">65+</label>
+			</div>
+			<div class="family">
+				<h2>Семейное положение:</h2>
+				<input type="radio" name="family" id="alone" value='no' hidden checked>
+				<label for="alone" tabindex="0">не женат / не замужем</label>
+				<input type="radio" name="family" id="married" value="yes" hidden>
+				<label for="married" tabindex="0">в браке</label>
+			</div>
+			<div class="kids">
+				<h2>Дети:</h2>
+				<label for="kidsnumber">есть</label>
+				<input type="number" name="kids" id="kidsnumber" style="display:inline;"/>
+
+			</div>
+			<button type="submit">Найти</button>
+			</form>
+		
+		<div class="building">
+		<h1>Строительство</h1>
+			<h2>Инфраструктура:</h2>
+			<div class="kidgardens">
+				<h2>Загруженность детских садов</h2>
+				<a href="#">отобразить</a>
+			</div>				
+			<div class="school">
+				<h2>Загруженность школ</h2>
+				<a href="#">отобразить</a>
+			</div>
+			<div class="molls">
+				<h2>Нагрузка на торговые центры</h2>
+				<a href="#">Отобразить</a>
+			</div>
+			<div class="leisure">
+				<h2>Нагрузка на объекты досуга</h2>
+				<a href="#">Отобразить</a>
+			</div>
+		</div>
+
+		</section>
+
+		<section class="map-result">
+ 				<iframe src="https://yandex.ru/map-widget/v1/-/CCSVVO2s" frameborder="1" allowfullscreen="true"></iframe>
+ 		</section>
+
+		<section class="error-popup hidden">
+ 				<h2 class="error-title">Ошибка</h2>
+ 		</section>
+
+ 		<script src="js/backend.js"></script>
+ 		<script src="js/data.js"></script>
+		<script src="js/index.js"></script>
+	</body>
+</html>

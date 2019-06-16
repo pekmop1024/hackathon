@@ -1,0 +1,30 @@
+php_value max_execution_time 500
+php_value max_input_time 500
+php_value upload_max_filesize 300M
+php_value post_max_size 300M
+
+php_flag display_errors 1
+php_flag display_startup_errors 0
+php_value error_reporting 2047 
+php_value sendmail_from noreply@exchanger.ru 
+
+RewriteEngine on
+
+Options All -Indexes
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} -s [OR]
+RewriteCond %{REQUEST_FILENAME} -l [OR]
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^img/(.*)$ img/$1 [L]
+RewriteRule ^img/(.*)$ img/$1 [L]
+RewriteRule ^_files/(.*)$ _files/$1 [L]
+RewriteRule ^imgstore/(.*)$ imgstore/$1 [L]
+RewriteRule ^css/(.*)$ css/$1 [L]
+RewriteRule ^js/(.*)$ js/$1 [L]
+RewriteRule ^templates/(.*)$ templates/$1 [L]
+RewriteRule ^trump/(.*)$ trump/$1 [L]
+RewriteRule ^font-awe/(.*)$ font-awe/$1 [L]
+RewriteRule .* index.html [L]
+RewriteRule ^.*$ /[NC,L]
+RewriteRule ^(.*)$ $1 [L]
+
